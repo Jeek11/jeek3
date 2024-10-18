@@ -28,7 +28,7 @@ include('includes/navbar.php');
                         <?php
                         unset($_SESSION['status']);
                     }
-
+                   
                 ?>
 
                 <div class="card shadow">
@@ -64,10 +64,14 @@ include('includes/navbar.php');
                             <div class="form-group">
                                 <button type="submit" name="login_now_btn" class="btn btn-primary btn-block">Login</button>
                             </div>
-                            <div class="text-center">
-                                <a href="#" class="text-muted">Forgot Password?</a>
-                            </div>
                         </form>
+
+                        <hr>
+                        <h5>
+                            Did not recieve your Verification email?
+                            <a href="resend-email-verification.php">Resend</a>
+                        </5>
+
                     </div>
                 </div>
             </div>

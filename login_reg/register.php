@@ -20,7 +20,7 @@ include('includes/navbar.php');
                                     Swal.fire({
                                         title: '<?= $_SESSION['status']; ?>',
                                         icon: 'success',  // You can change the icon to 'error', 'warning', etc. based on your scenario
-                                        confirmButtonText: 'Ok+'
+                                        confirmButtonText: 'Ok'
                                     });
                                 </script>
                                 <?php

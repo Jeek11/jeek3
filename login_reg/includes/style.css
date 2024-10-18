@@ -1,0 +1,29 @@
+/* style.css */
+
+.bg-info {
+    background-color: #5cb85c!important; /* Example: Green background */
+}
+
+.navbar {
+    padding: 1rem 0; /* Adjust padding as needed */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    margin-left: 1rem; /* Adjust spacing as needed */
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
