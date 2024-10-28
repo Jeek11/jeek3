@@ -61,7 +61,7 @@ if(isset($_POST['resend_email_verify_btn']))
                     $email = $row['email'];
                     $verify_token = $row['verify_token'];
 
-                    resend_verify_verify($name,$email,$verify_token);
+                    resend_email_verify($name,$email,$verify_token);
                     $_SESSION['status'] = "Verification email link has sent to your email address.!";
                     header("Location: login.php");
                     exit(0);
