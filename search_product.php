@@ -11,7 +11,10 @@ $search = isset($_POST['search']) ? $_POST['search'] : '';
 
 // Modify the SQL query to filter based on the search input
 $sql = "SELECT * FROM products";
-if ($search) {
+if (empty($search)) {
+    header('location: inventory.php'); // Redirect to inventory page
+    exit(0);
+}else{
     $sql .= " WHERE name LIKE '%" . $conn->real_escape_string($search) . "%'";  // Search by product name
 }
 
@@ -23,8 +26,6 @@ $result = $conn->query($sql);
 <!-- Link to custom CSS file -->
 <link rel="stylesheet" href="styles4.css">
 
-<!-- Link to custom CSS file -->
-<link rel="stylesheet" href="styles.css">
 
 <!-- Include Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
